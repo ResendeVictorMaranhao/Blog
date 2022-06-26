@@ -1,0 +1,41 @@
+.header{
+  width: 100%;
+  padding: 20px 40px;
+  background-color:#021D36 ;
+  box-sizing: border-box;
+}
+.menu{
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 50px;
+  align-items: center;
+}
+.menu-lista{
+  display: flex;
+ 
+  justify-self: end;
+}
+@media (max-width: 868px) { 
+  .menu-lista{
+    display: none;
+  }
+  .menu{
+  
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .foto{
+    justify-self: end;
+  }
+}
+.menu-lista li a{
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: #7F8CC3;
+  text-transform: capitalize;
+}
+.foto{
+  background-color:#F24C4C ;
+
+}

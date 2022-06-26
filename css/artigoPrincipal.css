@@ -1,0 +1,68 @@
+.artigo-principal{
+  display: flex;
+  grid-column: 1/3;
+  background-color:#041125 ;
+  color: #FAFBFF;
+  
+}
+@media (max-width: 1168px){
+  .artigo-principal{
+    flex-direction: column;
+  }
+}
+@media (max-width: 897px){
+
+  .artigo-principal{
+    flex-direction: row;
+  
+  }
+}
+@media (max-width: 760px){
+  .artigo-principal{
+    flex-direction: column;
+  
+  }
+
+}
+.imagem-principal img{
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
+
+}
+.imagem-principal{
+  flex: 1 1 50%;
+}
+.conteudo{
+  padding: 40px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 0 45%;
+}
+.tag-btn{
+  color: rgb(32, 24, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  background-color: #f9fbff;
+  align-self: start;
+}
+.tagDataPrincipal{
+  color: rgb(235, 238, 241);
+  text-transform: uppercase;
+}
+
+
+
+.artigo-textoPrincipal{
+  color: #C4CBE9;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+
+
+

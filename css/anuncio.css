@@ -1,0 +1,68 @@
+.anuncio{
+ grid-column: 3;
+ grid-row-start: 1;
+ grid-row-end: 6;
+padding: 0 0 0 20px;
+ 
+}
+@media (max-width: 897px){
+  .anuncio{
+   display: NONE;
+  }
+}
+.anuncio-titulo{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+.anuncio-titulo::before{
+  content: '';
+  display: block;
+  height: 4.5px;
+  background-color: rgb(230, 44, 90);
+  width: 100px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 0;
+
+}
+.redes{
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
+  gap: 10px;
+  place-items: center;
+  margin-bottom: 40px;
+}
+.twitter{
+  background-color: rgb(27, 123, 212);
+  border-radius: 4px;
+  height: 36px;
+  width: 36px;
+  border: 1px solid rgb(228, 224, 224);
+  
+}
+.pesquisa{
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+.lupa{
+  background-color: #d40c48;
+  border-radius: 4px 0 0 4px;
+  display: flex;
+  
+  
+}
+.anuncio-lupa{
+  margin: auto;
+}
+
+.pesquisa input{
+  box-shadow: 0 0 0 0;
+  line-height: 1.5;
+  outline: 0;
+  padding: 1rem;
+  border-radius: 0px 4px 4px 0px;
+  border: 1px 0 0 1px;
+  border: 1px solid #dee1ec;
+  border-left: none;
+}
